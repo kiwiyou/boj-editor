@@ -19,6 +19,9 @@ import { Paragraph } from "@tiptap/extension-paragraph";
 import { Subscript } from "@tiptap/extension-subscript";
 import { Superscript } from "@tiptap/extension-superscript";
 import { BubbleMenu } from "@tiptap/extension-bubble-menu";
+import { Blockquote } from "@tiptap/extension-blockquote";
+import { Code } from "@tiptap/extension-code";
+import { CodeBlock } from "@tiptap/extension-code-block";
 
 interface TitleSection {
   id: string;
@@ -67,6 +70,15 @@ const ContentSectionMenu: Component<SectionMenuProps> = ({ editor }) => (
     </button>
     <button onClick={() => editor.chain().focus().toggleSubscript().run()}>
       아래첨자
+    </button>
+    <button onClick={() => editor.chain().focus().toggleCode().run()}>
+      고정폭
+    </button>
+    <button onClick={() => editor.chain().focus().toggleBlockquote().run()}>
+      인용구
+    </button>
+    <button onClick={() => editor.chain().focus().toggleCodeBlock().run()}>
+      코드 블록
     </button>
     <button onClick={() => editor.chain().focus().toggleBulletList().run()}>
       순서 없는 목록
@@ -153,6 +165,9 @@ const App: Component = () => {
             BubbleMenu.configure({
               element: contentMenu(),
             }),
+            Blockquote,
+            Code,
+            CodeBlock,
           ],
           content: section.content,
         }));
