@@ -1,0 +1,57 @@
+body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans CJK KR", "Noto Sans KR", "나눔바른고딕",
+    "나눔고딕", "맑은고딕", "Helvetica Neue", "Helvetica", "Arial", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333;
+}
+
+p, li, li a {
+  color: #555;
+  margin: 0 0 10px;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.headline {
+  margin: 10px 0 25px 0;
+  border-bottom: 1px dotted #e4e9f0;
+}
+
+.headline h2 {
+  margin: 0 0 -2px 0;
+  padding-bottom: 5px;
+  display: inline-block;
+  border-bottom: 2px solid #0076c0;
+  font-size: 23px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #585f69;
+  font-weight: normal;
+}
+
+.title-headline h1 {
+  font-size: 28px;
+}
+
+.container {
+  padding: 10px 390px;
+}
+
+.problem-text {
+  font-size: medium;
+  line-height: 30px;
+}
